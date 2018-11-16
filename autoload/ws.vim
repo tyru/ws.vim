@@ -81,8 +81,8 @@ function! s:open_workspace(ws) abort
       echohl None
       return
   endif
-  source `=path`
   call s:close_ws_buffer()
+  source `=path`
 endfunction
 
 function! s:get_saved_workspaces() abort
